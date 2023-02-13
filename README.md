@@ -1,6 +1,6 @@
 
 
-# `Getting Spotify-Clone using JS, React App`
+# `Getting Spotify-Clone using JS, React App, Tailwind and ViteJS `
 
 # [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
