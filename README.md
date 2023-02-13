@@ -11,6 +11,6 @@
 
 ### `Content viewed with this project :`
 
-- Redux Toolkit to manage the state of our application
+- Redux Toolkit to manage the state of application
 - Tailwind to make the app responsive on all devices
 - Fetch data from unlimited sources using RapidAPI
