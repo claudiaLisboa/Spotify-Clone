@@ -13,5 +13,5 @@
 
 - Redux Toolkit to manage the state of application
 - Tailwind to make the app responsive on all devices
-- Fetch data from unlimited sources using RapidAPI
+- Fetch data from unlimited sources 
 - API Spotify [Web API](https://developer.spotify.com/documentation/web-api/)
