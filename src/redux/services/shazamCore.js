@@ -10,7 +10,7 @@ export const shazamCoreApi = createApi({ reducerPath: 'shazamCoreApi',
     },
   }),
   endpoints: (builder) => ({
-    getTopCharts: builder.query({ query: '/charts/world' }),
+    getTopCharts: builder.query({ query:() => '/charts/world' }),
   }),
 });
 
