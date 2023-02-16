@@ -1,14 +1,17 @@
+import { useDispatch, useSelector } from "react-redux";
 import { Error, Loader, SongCard } from '../components';
 import { genres } from '../assets/constants';
 import { useGetTopChartsQuery} from "../redux/services/shazamCore";
 
-export default function Discover() {
+const Discover = () => {
+  const dispactch = useDispatch();
+  const { activeSong, isPlaying } = useSlector((state) => state.player);
   const { data, isFetching, error} =  useGetTopChartsQuery();
   const genreTitle = 'Pop';
 
   if(isFetching) return <Loader title="Loading songs... "/>;
 
-  if(error) return <Error/>
+  if(error) return <Error/>;
 
   console.log(data);
   return (
@@ -33,6 +36,9 @@ export default function Discover() {
                   key={song.key}
                   song={song}
                   index={index}
+                  isPlaying={isPlaying}
+                  activeSong={activeSong}
+                  data={data}
               />
           ))}
       </div>
@@ -40,3 +46,4 @@ export default function Discover() {
   );
 }
 
+export default Discover;
