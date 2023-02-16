@@ -16,9 +16,9 @@ const SongCard = ({ song, index }) => {
              items-center  bg-black bg-opacity-50 group-hover:flex
               ${setActiveSong?.title === song.title ? 'flex bg-black bg-opacity-70' : 'hidden'}`}
         >
-        <PlayPause />
-      </div>
-
+          <PlayPause />
+        </div>
+        <img alt="song_img" src={song.images?.coverart} />
       </div>
     </div>
   );
