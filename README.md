@@ -20,5 +20,11 @@
 
 
 
-#### Data is looking exactly as it did in the rapidAPI
+#### - Data is looking exactly as it did in the rapidAPI
+***Step1***
 ![datafetching](https://user-images.githubusercontent.com/21189063/219141073-a8e5ba82-6319-409f-8693-3ca3f2ebc7c5.png)
+
+
+#### - Data is being displayed and play/pause functionality is responding correctly
+***Step2***
+![step2](https://user-images.githubusercontent.com/21189063/219660572-82eddd32-0e06-4fc4-bc6d-669ddb4214f2.png)
