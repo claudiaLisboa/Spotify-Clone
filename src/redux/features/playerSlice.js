@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-// created state
+// https://redux-toolkit.js.org/api/createslice
 const initialState = {
   currentSongs: [],
   currentIndex: 0,
