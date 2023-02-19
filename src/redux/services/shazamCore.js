@@ -21,4 +21,5 @@ export const shazamCoreApi = createApi({ reducerPath: 'shazamCoreApi',
 
 export const {
   useGetTopChartsQuery,
+  useGetSongDetailsQuery,
 } = shazamCoreApi;
