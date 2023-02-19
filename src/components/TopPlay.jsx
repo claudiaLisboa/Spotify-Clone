@@ -6,8 +6,11 @@ import { FreeMode } from 'swiper';
 import PlayPause from './PlayPause';
 import { playPause, setActiveSong } from '../redux/features/playerSlice';
 import { useGetTopChartsQuery } from '../redux/services/shazamCore';
-import 'swiper/css';
-import 'swiper/css/free-mode';
+import 'swiper/swiper-bundle.css';
+
+/* https://swiperjs.com/react  -
+ Modules styles (not required if you already imported bundle styles): (swiper/css/free-mode)
+  import 'swiper/modules/free-mode/free-mode.min.css'; */
 
 const TopChartCard = ({ song, index, isPlaying, activeSong, handlePauseClick, handlePlayClick }) => (
   <div className={`w-full flex flex-row items-center hover:bg-[#4c426e] ${activeSong?.title === song?.title ? 'bg-[#4c426e]' : 'bg-transparent'} py-2 p-4 rounded-lg cursor-pointer mb-2`}>
