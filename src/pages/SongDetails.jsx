@@ -17,7 +17,11 @@ const SongDetails = () => {
       {/* <DetailsHeader artistId={artistId} songData={songData} /> */}
       <div className="mb-10">
         <h2 className="text-white text-3xl font-bold">AZLyrics : </h2>
-        <div className="" />
+        <div className="mt-5" />
+        {songData?.sections[1].type === 'AZLYRICS'
+          ? songData?.sections[1].text.map((Line, index) => (
+            <p>{Line}</p>
+          )) : <p>Sorry, no azlyrics found!</p> }
       </div>
 
     </div>
