@@ -10,10 +10,10 @@ const SongDetails = () => {
   const { songid, id: artistId } = useParams();
   const { activeSong, isPlaying } = useSelector((state) => state.player);
 
-  const { data, isFetching: isFetchinRelatedSongs, error } = useGetSongRelatedQuery({ songid });
+  const { data, isFetching: isFetchingRelatedSongs, error } = useGetSongRelatedQuery({ songid });
   const { data: songData, isFetching: isFetchingSongDetails } = useGetSongDetailsQuery({ songid });
 
-  if (isFetchingSongDetails && isFetchinRelatedSongs) return <Loader title="Searching song details" />;
+  if (isFetchingSongDetails && isFetchingRelatedSongs) return <Loader title="Searching song details" />;
 
   if (error) return <Error />;
 
